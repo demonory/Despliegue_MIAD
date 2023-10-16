@@ -21,7 +21,7 @@ app.config.suppress_callback_exceptions = True
 
 # Load data from csv
 def load_data():
-    df = pd.read_csv('C:/Users/dmonroy3/OneDrive - Schlumberger/DIEGO_MONROY_PERSONAL/MAESTRIA UNIANDES/MASTER TRACK 3/DESPLIEGUE DE SOLUCIONES ANALITICAS/SEMANA 1/TAREAS/despliegue_de_un_tablero_en_la_nube/datos_energia.csv')
+    df = pd.read_csv('datos_energia.csv')
     df['time'] = pd.to_datetime(df['time'])
     df = df.set_index("time")
     return df
